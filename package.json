@@ -1,0 +1,24 @@
+{
+  "name": "insure-landing-page",
+  "version": "1.0.0",
+  "description": "HTML, and CSS design to mock Template using Bootstrap v5",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitulpatel224/practice-bs-insure-landing-page.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Bootstrap5"
+  ],
+  "author": "mitulpatel224",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitulpatel224/practice-bs-insure-landing-page/issues"
+  },
+  "homepage": "https://github.com/mitulpatel224/practice-bs-insure-landing-page#readme"
+}
