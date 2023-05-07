@@ -1,3 +1,11 @@
+:root {
+  --bg-primary: hsl(256, 26%, 20%);
+  --bg-primary-2: hsl(216, 30%, 68%);
+  --very-darkviolet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +14,11 @@
 
 html,
 body {
+  height: 100%;
+  width: 100%;
   font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: var(--very-darkviolet);
 }
 
 h1,
@@ -16,6 +28,10 @@ h4,
 h5,
 h6 {
   font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 54px;
 }
 
 /* --------- CUSTOM CSS --------- */
@@ -23,4 +39,42 @@ h6 {
 .navbar-toggler {
   border: 0;
   background: transparent;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: var(--bg-primary);
+  color: var(--very-light-gray);
+}
+/* TODO: SET SVG Background lines */
+.hero-pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+}
+.hero-pattern::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+}
+
+/* FOOTER SECTION */
+.page-footer {
+  background-color: var(--very-light-gray);
+}
+.page-footer h5 {
+  color: var(--dark-grayish-violet);
+}
+.page-footer .nav-link {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: var(--very-darkviolet);
 }
