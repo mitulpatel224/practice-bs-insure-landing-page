@@ -46,24 +46,19 @@ h1 {
   background-color: var(--bg-primary);
   color: var(--very-light-gray);
 }
-/* TODO: SET SVG Background lines */
-.hero-pattern::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+.hero .hero-image-warper {
+  position: relative;
 }
-.hero-pattern::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+@media only screen and (min-width: 576px) {
+  .hero .hero-image-warper .img-absolute {
+    max-width: 520px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
 }
 
 /* FOOTER SECTION */

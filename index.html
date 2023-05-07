@@ -97,44 +97,35 @@
     <!-- MAIN SECTION -->
     <main>
       <!-- HERO SECTION -->
-      <section class="hero hero-pattern">
+      <section class="hero">
         <div class="container">
-          <!-- TODO: SVG background not set -->
-          <div class="row py-lg-5">
-            <div class="col-12 col-lg-6 order-lg-2 p-0">
-              <figure class="m-0 w-100">
+          <div class="row row-cols-1 row-cols-md-2 py-md-5">
+            <!-- HERO IMAGE -->
+            <div class="hero-image-warper col order-md-2">
+              <figure>
                 <img
-                  class="d-lg-none img-fluid w-100"
-                  src="./images/image-intro-mobile.jpg"
+                  class="img-absolute w-100 d-none d-md-block"
+                  src="./images/image-intro-desktop.jpg"
+                  alt="intro-image"
                 />
                 <img
-                  class="d-none d-lg-block img-fluid w-100"
-                  src="./images/image-intro-desktop.jpg"
+                  class="w-100 d-md-none"
+                  src="./images/image-intro-mobile.jpg"
+                  alt="intro-image"
                 />
               </figure>
             </div>
             <!-- HERO TEXT CONTENT -->
-            <div class="col-12 col-lg-6 my-5">
-              <div>
-                <hr class="mt-0" />
-              </div>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <h1 class="text-center text-lg-start">
-                  Humanizing your insurance.
-                </h1>
-                <p class="text-center text-lg-start mt-3">
-                  Get your life insurance coverage easier and faster. We blend
-                  our expertise and technology to help you find the plan that’s
-                  right for you. Ensure you and your loved ones are protected.
-                </p>
-                <button
-                  class="btn btn-lg btn-outline-light text-uppercase rounded-0 mt-3"
-                >
-                  View Plans
-                </button>
-              </div>
+            <div class="hero-content col text-center text-md-start py-5">
+              <h1>Humanizing your insurance.</h1>
+              <p>
+                Get your life insurance coverage easier and faster. We blend our
+                expertise and technology to help you find the plan that’s right
+                for you. Ensure you and your loved ones are protected.
+              </p>
+              <button class="btn btn-lg btn-outline-light rounded-0">
+                View plans
+              </button>
             </div>
           </div>
         </div>
