@@ -1,0 +1,100 @@
+:root {
+  --bg-primary: hsl(256, 26%, 20%);
+  --bg-primary-2: hsl(216, 30%, 68%);
+  --very-darkviolet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  color: var(--very-darkviolet);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 54px;
+}
+
+/* --------- CUSTOM CSS --------- */
+/* HEADER SECTION */
+.navbar-toggler {
+  border: 0;
+  background: transparent;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: var(--bg-primary);
+  color: var(--very-light-gray);
+}
+.hero .hero-image-warper {
+  position: relative;
+}
+
+/* FEATURES SECTION */
+.features {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* FIND MORE SECTION */
+.find-more .banner {
+  color: var(--very-light-gray);
+  background-color: var(--bg-primary);
+}
+
+/* FOOTER SECTION */
+.page-footer {
+  background-color: var(--very-light-gray);
+}
+.page-footer h5 {
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+  color: var(--dark-grayish-violet);
+}
+.page-footer .nav-link {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: var(--very-darkviolet);
+}
+
+/* RESPONSIVE DESIGN FOR DEVICES >= 576px */
+@media only screen and (min-width: 576px) {
+  /* HERO SECTION */
+  .hero .hero-image-warper .img-absolute {
+    max-width: 520px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+/* RESPONSIVE DESIGN FOR DEVICES >= 768px */
+@media only screen and (min-width: 769px) {
+  /* FEATURES SECTION */
+  .features {
+    margin-top: 200px;
+  }
+}
