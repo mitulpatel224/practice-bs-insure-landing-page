@@ -56,6 +56,12 @@ h1 {
   margin-bottom: 100px;
 }
 
+/* FIND MORE SECTION */
+.find-more .banner {
+  color: var(--very-light-gray);
+  background-color: var(--bg-primary);
+}
+
 /* FOOTER SECTION */
 .page-footer {
   background-color: var(--very-light-gray);
