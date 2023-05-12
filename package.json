@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "HTML, and CSS design to mock Template using Bootstrap v5",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mitulpatel224/practice-bs-insure-landing-page.git"

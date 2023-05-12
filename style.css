@@ -31,20 +31,73 @@ h6 {
   font-weight: 400;
 }
 h1 {
-  font-size: 54px;
+  font-size: calc(2.5rem + 1.5vw);
+}
+h2 {
+  font-size: calc(2rem + 1.5vw);
+}
+h3 {
+  font-size: calc(1.75rem + 1.5vw);
+}
+h4 {
+  font-size: calc(0.75rem + 1.5vw);
 }
 
 /* --------- CUSTOM CSS --------- */
+
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.my-7 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 /* HEADER SECTION */
+.page-header {
+  background-color: var(--very-light-gray);
+}
 .navbar-toggler {
   border: 0;
   background: transparent;
 }
+.page-header .nav-link {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: var(--very-darkviolet);
+}
 
 /* HERO SECTION */
 .hero {
+  position: relative;
   background-color: var(--bg-primary);
   color: var(--very-light-gray);
+}
+.hero .container {
+  position: relative;
+}
+.hero .container .btn {
+  position: relative;
+  z-index: 4;
+}
+.hero::before {
+  content: url("./images//bg-pattern-intro-left-mobile.svg");
+  position: absolute;
+  top: 50.8%;
+  left: 0;
+  z-index: 3;
+}
+.hero::after {
+  content: url("./images//bg-pattern-intro-right-mobile.svg");
+  position: absolute;
+  top: 86%;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
 .hero .hero-image-warper {
   position: relative;
@@ -58,13 +111,41 @@ h1 {
 
 /* FIND MORE SECTION */
 .find-more .banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
   color: var(--very-light-gray);
   background-color: var(--bg-primary);
+}
+.find-more .banner .call-to-action {
+  position: relative;
+  z-index: 2;
+}
+.find-more .banner::after {
+  content: url("./images/bg-pattern-how-we-work-mobile.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* FOOTER SECTION */
 .page-footer {
+  position: relative;
   background-color: var(--very-light-gray);
+}
+.page-footer::before {
+  content: url("./images/bg-pattern-footer-mobile.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.page-footer .container {
+  position: relative;
+  z-index: 2;
 }
 .page-footer h5 {
   font-size: 18px;
@@ -81,13 +162,44 @@ h1 {
 @media only screen and (min-width: 576px) {
   /* HERO SECTION */
   .hero .hero-image-warper .img-absolute {
-    max-width: 520px;
+    max-width: 620px;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
     z-index: 2;
+  }
+
+  .hero::before {
+    content: url("./images//bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    z-index: 3;
+  }
+  .hero::after {
+    content: url("./images//bg-pattern-intro-right-desktop.svg");
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    right: 0%;
+    z-index: 3;
+  }
+  .find-more .banner::after {
+    content: url("./images/bg-pattern-how-we-work-desktop.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .page-footer::before {
+    content: url("./images/bg-pattern-footer-desktop.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 
@@ -95,6 +207,18 @@ h1 {
 @media only screen and (min-width: 769px) {
   /* FEATURES SECTION */
   .features {
-    margin-top: 200px;
+    margin-top: 350px;
+  }
+
+  .hero::before {
+    top: 63%;
+    left: 0;
+    z-index: 3;
+  }
+  .hero::after {
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
   }
 }
