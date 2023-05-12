@@ -30,9 +30,11 @@
   <body>
     <!-- HEADER SECTION -->
     <header class="page-header">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
         <div class="container">
-          <div class="d-flex flex-grow-1 justify-content-between">
+          <div
+            class="d-flex flex-grow-1 justify-content-between align-items-center"
+          >
             <!-- LOGO -->
             <a href="#" class="navbar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="112" height="18">
@@ -72,22 +74,26 @@
             id="navbarNav"
           >
             <ul class="navbar-nav text-center">
-              <li class="nav-item">
+              <li class="nav-item mt-3 mt-md-0 ms-md-3">
                 <a href="#" class="nav-link active text-uppercase">
                   How we work
                 </a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item mt-3 mt-md-0 ms-md-3">
                 <a href="#" class="nav-link text-uppercase">Blog</a>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item mt-3 mt-md-0 ms-md-3">
                 <a href="#" class="nav-link text-uppercase">Account</a>
               </li>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link text-uppercase">View plans</a>
+              <li class="nav-item mt-3 mt-md-0 ms-md-3">
+                <a
+                  href="#"
+                  class="btn btn-outline-dark rounded-0 text-uppercase"
+                  >View plans</a
+                >
               </li>
             </ul>
           </div>
@@ -99,10 +105,10 @@
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 py-md-5">
+          <div class="row row-cols-1 row-cols-md-2 py-md-5 gx-md-5">
             <!-- HERO IMAGE -->
-            <div class="hero-image-warper col order-md-2">
-              <figure>
+            <div class="hero-image-warper col order-md-2 p-0">
+              <figure class="m-0">
                 <img
                   class="img-absolute w-100 d-none d-md-block"
                   src="./images/image-intro-desktop.jpg"
@@ -116,7 +122,9 @@
               </figure>
             </div>
             <!-- HERO TEXT CONTENT -->
-            <div class="hero-content col text-center text-md-start py-5">
+            <div
+              class="hero-content col text-center text-md-start py-7 pe-md-5"
+            >
               <h1>Humanizing your insurance.</h1>
               <p>
                 Get your life insurance coverage easier and faster. We blend our
@@ -133,42 +141,44 @@
       <!-- FEATURES SECTION -->
       <section class="features">
         <div class="container">
-          <h1 class="text-center text-lg-start">We’re different</h1>
-          <div class="row row-cols-1 row-cols-lg-3 px-3">
-            <div class="col text-center mt-5">
+          <h2 class="text-center text-lg-start">We’re different</h2>
+          <div
+            class="row row-cols-1 row-cols-lg-3 px-3 text-center text-lg-start"
+          >
+            <div class="col mt-5">
               <figure>
                 <img
                   src="./images/icon-snappy-process.svg"
                   alt="icon-snappy-process"
                 />
               </figure>
-              <h3 class="mt-4">Snappy Process</h3>
+              <h4 class="mt-4">Snappy Process</h4>
               <p>
                 Our application process can be completed in minutes, not hours.
                 Don’t get stuck filling in tedious forms.
               </p>
             </div>
-            <div class="col text-center mt-5">
+            <div class="col mt-5">
               <figure>
                 <img
                   src="./images/icon-affordable-prices.svg"
                   alt="icon-affordable-prices"
                 />
               </figure>
-              <h3 class="mt-4">Affordable Prices</h3>
+              <h4 class="mt-4">Affordable Prices</h4>
               <p>
                 We don’t want you worrying about high monthly costs. Our prices
                 may be low, but we still offer the best coverage possible.
               </p>
             </div>
-            <div class="col text-center mt-5">
+            <div class="col mt-5">
               <figure>
                 <img
                   src="./images/icon-people-first.svg"
                   alt="icon-people-first"
                 />
               </figure>
-              <h3 class="mt-4">People First</h3>
+              <h4 class="mt-4">People First</h4>
               <p>
                 Our plans aren’t full of conditions and clauses to prevent
                 payouts. We make sure you’re covered when you need it.
@@ -180,13 +190,15 @@
       <!-- FIND MORE SECTION -->
       <section class="find-more">
         <div class="container">
-          <div class="banner">
+          <div class="banner my-7">
             <div
-              class="row row-cols-1 row-cols-lg-2 px-4 py-5 text-center text-lg-start justify-content-between align-items-center"
+              class="row row-cols-1 row-cols-lg-2 px-4 py-6 text-center text-lg-start justify-content-between align-items-center"
             >
-              <h1 class="col col-lg-8">Find out more about how we work</h1>
+              <h3 class="col col-lg-8">Find out more about how we work</h3>
               <div class="col col-lg-auto justify-content-end mt-5 mt-lg-0">
-                <button class="btn btn-lg btn-outline-light rounded-0">
+                <button
+                  class="btn btn-lg btn-outline-light rounded-0 call-to-action"
+                >
                   How we work
                 </button>
               </div>
@@ -266,7 +278,7 @@
             <div
               class="row row-cols-1 row-cols-sm-4 text-center text-md-start text-uppercase mt-3"
             >
-              <div class="col mt-4">
+              <div class="col mt-5">
                 <h5>Our company</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item">
@@ -283,7 +295,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col mt-4">
+              <div class="col mt-5">
                 <h5>Help me</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item">
@@ -300,7 +312,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col mt-4">
+              <div class="col mt-5">
                 <h5>Contact</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item">
@@ -314,7 +326,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col mt-4">
+              <div class="col mt-5">
                 <h5>Others</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item">
